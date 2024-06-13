@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696E9;
+}
+
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(3, 96 ,251, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.home .content p{
+    margin-bottom: 65px;
+}
+
+.home .content a{
+    background: #fff;
+    padding: 15px 35px;
+    color: #1680AC;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.home .media-icons a{
+    color: #fff;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+    transform: scale(1.3);
+}
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1080px){
+    header{
+        padding: 12px 20px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    .home .media-icons{
+        right: 15px;
+    }
+
+    /* header .navigation{
+        display: none;
+    } */
+
+    /* .menu-btn{
+        background: url(menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease ;
+    }*/
+}
+
+
+
+
+/* main css */
+
+.Gallery{
+    margin: 0;
+    padding: 40px 50px;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+.Gallery h1{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.Gallery .box-container{
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+}
+.Gallery .box1{
+    padding-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.Gallery .box1 img{
+    width: 450px;
+    height: 250px;
+}
+
+.Gallery .box2{
+    padding-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Gallery .box2 img{
+    width: 450px;
+    height: 250px;
+}
+
+.Explore{
+    padding: 40px 50px;
+}
+
+.Explore h1{
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+.Explore .box-container2{
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Explore .box-container2 .text{
+    position: absolute;
+    bottom: 65px;
+
+}
+
+.Explore .box-container2 a{
+    background: black;
+    color: white;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* safari main */
+
+
+
+
+hr{
+    margin: 10px;
+}
+
+/* footer css */
+
+footer {
+    background-color: white;
+    color: white;
+    text-align: center;
+    /* padding: 10px; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo{
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+footer p{
+    padding: 10px;
+    background-color: gray;
+}
+
+
+
+/* safari page css */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.box-A{
+    position: absolute;
+    padding-top: 60px;
+}
