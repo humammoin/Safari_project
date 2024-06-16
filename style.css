@@ -303,14 +303,48 @@ footer p{
 
 
 /* safari page css */
+
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins", sans-serif;
 }
 
 .box-A{
-    position: absolute;
-    padding-top: 60px;
+    
+    padding-top: 80px;
+}
+
+.box-A h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.box-A .box-A1{
+    margin-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: azure;
+}
+
+
+
+.box-A1 table th, td{
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+    font-size: 1.2em;
+    
+}
+
+.box-A1 table th, td a{
+    text-decoration: none;
 }
